@@ -7,6 +7,16 @@ console.log (dado_valore_human);
 var dado_valore_pc = Math.floor(Math.random() * 10) + 1;
 if (dado_valore_pc < 7 ) {
     console.log (dado_valore_pc);
+    // confrontare i due valori e vendere chi ha vinto
+if (dado_valore_human > dado_valore_pc) {
+    console.log ('Human vince!');
+}
+else if (dado_valore_human == dado_valore_pc) {
+    console.log ('Human e Pc pareggiano!');
+}
+else {
+    console.log ('Pc vince!');
+}
 }else {
     console.log ('hai barato!! errore');
 }
@@ -14,5 +24,3 @@ if (dado_valore_pc < 7 ) {
 else {
     console.log ('hai barato!! errore');
 }
-
-// confrontare i due valori e vendere chi ha vinto
