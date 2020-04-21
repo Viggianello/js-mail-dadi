@@ -1,11 +1,18 @@
-// document.getElementById('stampacolore').innerHTML='Ecco il tuo colore preferito:
-// chiedere all utente la sua email
-var mia_email = prompt('Quale è il tuo email ?', 'tomcruise@missionimpossible.com');
-// creare una lista di email
-var lista_email = ['tomcruise@missionimpossible.com' ,'dicaprio@titanic.com' ,'ladygaga@badromance.com' ,'pippo@cartone.com' ,'picasso@guernica.com' ,'paint@disegno.com' ,'write@pencil.com']
-
-for (var i = 0; i < lista_email.length || mia_email == lista_email[i] ; i++) {
-    console.log (mia_email);
+// "Gioco dei dadi" PC vs. Human: chiedi un numero all'utente tra 1 e 6 (giocata human) e estrai un numero casuale tra 1 e 6 (giocata PC). Chi fa il numero più alto vince!
+// chiedere all utente un numero da 1 a 6
+var dado_valore_human = prompt('Scegli un numero da 1 a 6 ?', 3);
+if (dado_valore_human <7 && dado_valore_human >=1 && isNaN(dado_valore_human) == false) {
+console.log (dado_valore_human);
+//creare un  numero da 1 a 6 per il pc
+var dado_valore_pc = Math.floor(Math.random() * 10) + 1;
+if (dado_valore_pc < 7 ) {
+    console.log (dado_valore_pc);
+}else {
+    console.log ('hai barato!! errore');
+}
+}
+else {
+    console.log ('hai barato!! errore');
 }
 
-console.log (lista_email);
+// confrontare i due valori e vendere chi ha vinto

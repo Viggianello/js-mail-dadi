@@ -8,12 +8,9 @@ var lista_email_vip = ['tomcruise@missionimpossible.com' ,'dicaprio@titanic.com'
 // verificare che l email è nella lista e dunque dare l output richiesto
  for (var i = 0; i < lista_email_vip.length; i++) {
     if (mia_email != lista_email_vip[i]) {
-        // console.log (mia_email);
-        console.log('Questa email non è nella lista');
-    } else {
-        console.log(mia_email);
-        // console.log ('Questa email non è nella lista');
-    }}
+        console.log('non sei nella lista');
+    }   else{
+        console.log('sei in lista');}}
 // for (var i = 0; i < lista_email_vip.length || mia_email == lista_email_vip[i] ; i++) {
 //     console.log (mia_email);
 // }
