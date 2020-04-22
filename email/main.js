@@ -7,12 +7,10 @@ var lista_email_vip = ['tomcruise@missionimpossible.com' ,'dicaprio@titanic.com'
 
 // verificare che l email è nella lista e dunque dare l output richiesto
 // dichiaro la variabile di controllo
-var controllo;
-for(var i = 0; i < lista_email_vip.length; i++) {
+var controllo = false;
+for(var i = 0; i < lista_email_vip.length && controllo == false; i++) {
     if (mia_email == lista_email_vip[i]) {
         controllo = true;
-    } else {
-        controllo = false;
     }
 }
 
@@ -22,6 +20,7 @@ if(controllo == true) {
     console.log('sei nella lista');
 } else {
     //Non sei in lista
+    console.log('non sei nella lista');
 }
 
 // for (var i = 0; i < lista_email_vip.length || mia_email == lista_email_vip[i] ; i++) {
