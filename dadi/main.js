@@ -2,7 +2,7 @@
 // chiedere all utente un numero da 1 a 6
 var dado_valore_human = parseInt(prompt('Scegli un numero da 1 a 6 ?'));
 //creare un  numero da 1 a 6 per il pc
-var dado_valore_pc = Math.floor(Math.random() * 5) + 1;
+var dado_valore_pc = Math.floor(Math.random() * 6) + 1;
 if (dado_valore_human <7 && dado_valore_human >=1 && isNaN(dado_valore_human) == false) {
     console.log (dado_valore_human);
     console.log (dado_valore_pc);
